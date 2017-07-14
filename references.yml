@@ -1,2 +1,4 @@
 mongodb-mongo:
   test-lifecycle: 9440b01605ba2a21e37b4d4aecc6b56a2e6749cb
+test-lifecycle:
+  mongodb-mongo-master: 1d262109851c8acb3669167b0ccb1885972499d8
