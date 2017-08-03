@@ -5,6 +5,7 @@
 # 0.4.
 selector:
   js_test:
+<<<<<<< Updated upstream
     jstests/aggregation/sources/changeNotification/change_notification.js:
     - unreliable|aggregation_WT|enterprise-suse11-s390x
     jstests/auth/pseudo_commands.js:
@@ -30,6 +31,7 @@ selector:
     - unreliable|jsCore|ubuntu1404-rocksdb
     - unreliable|jsCore_WT|linux-64-ephemeralForTest
     jstests/core/coveredIndex1.js:
+    - invalidtag
     - unreliable|jsCore|linux-64-ephemeralForTest
     - unreliable|jsCore|ubuntu1404-rocksdb
     - unreliable|jsCore_WT|linux-64-ephemeralForTest
@@ -40,111 +42,6 @@ selector:
     - unreliable|jsCore_inMem
     - unreliable|jsCore_inMem|ubuntu1604-debug-asan
     - unreliable|jsCore_inMem|ubuntu1604-debug-ubsan
-    jstests/core/find1.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/find3.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/fsync.js:
-    - unreliable|jsCore|enterprise-rhel-62-64-bit-inmem
-    - unreliable|jsCore|enterprise-windows-64-2k8-inmem
-    - unreliable|jsCore_WT|enterprise-rhel-62-64-bit-inmem
-    - unreliable|jsCore_inMem
-    - unreliable|jsCore_inMem|ubuntu1604-debug-asan
-    - unreliable|jsCore_inMem|ubuntu1604-debug-ubsan
-    jstests/core/fts_mix.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index1.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index2.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index3.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index4.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index_bigkeys.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/index_bigkeys_validation.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/js1.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/js2.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/js3.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/js4.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/js8.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/killop_drop_collection.js:
-    - unreliable|jsCore|enterprise-rhel-62-64-bit-inmem
-    - unreliable|jsCore|enterprise-windows-64-2k8-inmem
-    - unreliable|jsCore_WT|enterprise-rhel-62-64-bit-inmem
-    - unreliable|jsCore_inMem
-    - unreliable|jsCore_inMem|ubuntu1604-debug-asan
-    - unreliable|jsCore_inMem|ubuntu1604-debug-ubsan
-    jstests/core/queryoptimizer3.js:
-    - unreliable|sharded_collections_jscore_passthrough|linux-64-debug
-    - unreliable|sharded_collections_jscore_passthrough|osx-1010-ssl
-    - unreliable|sharded_collections_jscore_passthrough_WT|debian81
-    jstests/core/remove2.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/sort1.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/sort2.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/sort5.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/core/sort_numeric.js:
-    - unreliable|jsCore|linux-64-ephemeralForTest
-    - unreliable|jsCore|ubuntu1404-rocksdb
-    - unreliable|jsCore_WT|linux-64-ephemeralForTest
-    jstests/gle/gle_explicit_optime.js:
-    - unreliable|gle_auth|enterprise-rhel-62-64-bit-inmem
-    - unreliable|gle_auth_write_cmd|enterprise-rhel-62-64-bit-inmem
-    jstests/noPassthrough/drop_collections_two_phase_feature_compatibility_version.js:
-    - unreliable|noPassthrough|linux-64-ephemeralForTest
-    jstests/noPassthrough/lock_stats.js:
-    - unreliable|noPassthrough|enterprise-rhel-62-64-bit-inmem
-    jstests/noPassthroughWithMongod/capped4.js:
-    - unreliable|noPassthroughWithMongod|linux-64-ephemeralForTest
-    - unreliable|noPassthroughWithMongod|ubuntu1404-rocksdb
-    jstests/noPassthroughWithMongod/index_check10.js:
     - unreliable|noPassthroughWithMongod|linux-64-ephemeralForTest
     - unreliable|noPassthroughWithMongod|ubuntu1404-rocksdb
     jstests/replsets/fsync_lock_read_secondaries.js:
@@ -188,3 +85,18 @@ selector:
     - unreliable|sharding_auth|linux-64-ephemeralForTest
     - unreliable|sharding_auth|ubuntu1404-rocksdb
     - unreliable|sharding_op_query_WT|linux-64-ephemeralForTest
+=======
+    jstests/dur/checksum.js:
+    - unreliable
+    - unreliable|noPassthrough
+    jstests/noPassthrough/ftdc_setdirectory.js:
+    - unreliable|noPassthrough|windows-64-2k8-debug
+    - unreliable
+    - unreliable|noPassthrough
+    jstests/noPassthrough/client_metadata_log.js:
+    - unreliable
+    - unreliable|noPassthrough
+    jstests/noPassthrough/drop_collections_two_phase_feature_compatibility_version.js:
+    - unreliable|noPassthrough|linux-64-ephemeralForTest
+    - unreliable|noPassthrough
+>>>>>>> Stashed changes
